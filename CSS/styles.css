@@ -11,12 +11,14 @@
 /* Start Header */
 header{
     width: 100%;
-    padding: 0 20px;
     background-color: var(--mainpurple);
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
 /* Start logo */
 header .logo a{
     text-transform: uppercase;
@@ -64,7 +66,7 @@ header .btn a{
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid var(--mainorange);
-    transition: 0.3s ;
+    transition: 0.3s;
 }
 
 header .btn a:hover{
@@ -79,7 +81,6 @@ header .btn a:hover{
     margin-right: 60px;
     padding-left: 60px;
     padding-right: 60px;
-    background-color: #7335b7;
 }
 
 /* x-small screen */
@@ -98,7 +99,7 @@ header .btn a:hover{
     }
     
     header .dashed span{
-        background: #333;
+        background: var(--mainorange);
         margin-bottom: 5px;
         height: 2px;
     }
@@ -117,10 +118,10 @@ header .btn a:hover{
     header .links ul{
         list-style: none;
         margin: 0;
-        padding: 0;
-        background-color: var(--mainpurple);
+        padding: 5px;
+        background-color: var(--mainorange);
         position: absolute;
-        min-width: 200px; 
+        min-width: 150px; 
         display: none;
         top: calc(100% + 20px);
         right: 0;
@@ -140,23 +141,58 @@ header .btn a:hover{
     }
 }
 
-/* small screen */
-@media (min-width:768px){
-    .page .container{
-        width: 750px;
-        margin: auto;
-    }
-}   
-/* medium screen */
-@media (min-width:992px){
-    .page .container{
-        width: 970px;
-        margin: auto;
+
+/* Start Home Styles */
+
+.home .container{
+    width: 100%;
+    background-color: #7335b7;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: 50%;
+    padding: 20px;
+}
+
+.home .container .home-img img{
+    width: 80%;
+}
+
+.home .container .home-content h1{
+    text-transform: uppercase;
+    color: white;
+}
+
+.home .container .home-content p{
+    text-transform: capitalize;
+    color: white;
+}
+
+.home .container .home-btn a{
+    background-color: var(--mainorange);
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--mainorange);
+    margin-top: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.home .container .home-btn a:hover{
+    background-color: transparent;
+}
+
+
+@media (max-width:767px){
+    .home .container{
+        display: block;
+        border-radius: 0%;
     }
 }
-/* large screen */
-@media (min-width:1200px){
-    .page .container{
-        width: 1170px;
-    }
-}
+/* End Home Styles */
