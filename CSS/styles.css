@@ -219,10 +219,34 @@ header .btn a:hover{
     padding: 5px;
     border: 2px solid black;
     border-radius: 10px;
+    transition: 0.3s all;
 }
 .services .serv-content div img{
     width: 60px;
     margin-bottom: 10px;
 }
+.services .serv-content .border:hover img {
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px;
+}
 
+.services .serv-content .border:hover{
+    background-color: var(--mainpurple);
+    color: white;
+}
+.services .serv-content div{
+    margin-top: 15px;
+}
+.services .serv-content div:last-child a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--mainpurple);
+    color: white;
+    border-radius: 3px;
+}
+
+.services .serv-content .border:hover a{
+    background-color: var(--mainorange);
+}
 /* Start services styling */
