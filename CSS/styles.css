@@ -193,6 +193,10 @@ header .btn a:hover{
 
 
 /* Start services styling */
+.services{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
 .services .serv-heading h1{
     text-transform: uppercase;
@@ -250,3 +254,68 @@ header .btn a:hover{
     background-color: var(--mainorange);
 }
 /* Start services styling */
+
+
+/* Start About styles */
+
+.about-us{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.about-us .container{
+    background-color: var(--mainpurple);
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+@media (max-width:767px){
+    .about-us .container{
+        display: block;
+        border-radius: 0%;
+    }
+}
+
+.about-us .container .about-cont .content {
+    color: white;
+}
+
+.about-us .container .about-cont .content h2, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-us .container .about-cont .content h2{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.about-us .container .about-cont .content p{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.about-us .container .about-cont .btn a{
+    background-color: var(--mainorange);
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--mainorange);
+    margin-top: 10px;
+    display: block;
+    transition: 0.3s;
+}
+.about-us .container .about-cont .btn a:hover{
+    background-color: var(--mainpurple);
+}
+.about-us .container .about-img img{
+    width: 100%;
+}
+
+/* End About styles */
