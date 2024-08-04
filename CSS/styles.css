@@ -249,6 +249,10 @@ header .btn a:hover{
     color: white;
     border-radius: 3px;
 }
+.services .serv-content div:last-child a:hover{
+    border: solid 1px var(--mainorange);
+    background-color: var(--mainpurple);
+}
 
 .services .serv-content .border:hover a{
     background-color: var(--mainorange);
@@ -319,3 +323,61 @@ header .btn a:hover{
 }
 
 /* End About styles */
+
+/* Start our case styles */
+
+.our-case{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.our-case .container h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.our-case .container .case-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.our-case .container .case-content .cont-one, .cont-two{
+    box-shadow: 1px 1px 3px #0000009c;
+}
+.our-case .container .case-content img{
+    width: 100%;
+}
+
+.our-case .container .case-content .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.our-case .container .case-content .btn a{
+    background-color: var(--mainorange);
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--mainorange);
+    display: block;
+    transition: 0.3s;
+}
+
+.our-case .container .case-content .btn a:hover{
+    background-color: transparent;
+    color: var(--mainorange);
+}
+/* End our case styles */
