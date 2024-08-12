@@ -564,4 +564,8 @@ footer .container .content div:nth-child(3) div div a:hover{
     color: var(--mainorange);
 }
 
+.copy-right p{
+    color: white;
+}
+
 /* End footer styles */
